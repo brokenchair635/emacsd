@@ -4,4 +4,5 @@ backups/**
 eshell/**
 transient/**
 .DS_Store
+eln-cache/**
 

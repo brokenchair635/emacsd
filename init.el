@@ -21,16 +21,18 @@
   :config (setq company-idle-delay 0.2))
 
 (prefer-coding-system 'utf-8)
+(switch-to-buffer "*scratch*")
 (set-default-coding-systems 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
-(setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
 (set-face-attribute 'default nil :family "Monaco" :height 120)
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
 (setq inhibit-startup-screen t)
-(switch-to-buffer "*scratch*")
 (setq initial-major-mode 'org-mode)
 (setq initial-scratch-message "")
 (setq ring-bell-function 'ignore)
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "~/.emacs.d/auto-save-list/") t)))
 (setq-default buffer-file-coding-system 'utf-8-unix)
 
 (require 'mouse)

@@ -1,3 +1,10 @@
+;;; init.el --- emacs initialzation file -*- lexical-binding: t; -*-
+;;; Commentary:
+;;; This file is the initialzation file for Emacs.
+;;; It contains various configurations and package settings.
+
+;;; Code:
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
@@ -46,3 +53,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;;; init.el ends here

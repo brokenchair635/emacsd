@@ -27,11 +27,7 @@
   :init (global-company-mode)
   :config (setq company-idle-delay 0.2))
 
-(prefer-coding-system 'utf-8)
 (switch-to-buffer "*scratch*")
-(set-default-coding-systems 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
 (set-face-attribute 'default nil :family "Monaco" :height 120)
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
 (setq inhibit-startup-screen t)
@@ -55,3 +51,4 @@
  )
 
 ;;; init.el ends here
+(put 'upcase-region 'disabled nil)

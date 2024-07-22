@@ -33,7 +33,6 @@
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message "")
 (setq initial-major-mode 'org-mode)
-(setq-default buffer-file-coding-system 'utf-8-unix)
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 

@@ -1,48 +1,18 @@
-;;; init.el --- Emacs Initialzation file -*- lexical-binding: t; -*-
+;;; init.el --- Emacs Initialization file -*- lexical-binding: t; -*-
 ;;; Commentary:
-;;; This file is the initialzation file for Emacs.
+;;; This file is the initialization file for Emacs.
 ;;; It contains various configurations and package settings.
 
 ;;; Code:
 
-;; Package Management
-;; Ensure that `use-package` is installed for managing packages.
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/") t)
-;; Install `use-package` if it's not already installed
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-;; Load `use-package` for further package management
-(eval-when-compile
-  (require 'use-package))
-;; Configure packages with `use-package`
-(use-package flycheck
-  :ensure t
-  :init (global-flycheck-mode))
-(use-package magit
-  :ensure t)
-(use-package helm
-  :ensure t)
-(use-package auctex
-  :ensure t)
-(use-package company
-  :ensure t
-  :init (global-company-mode)
-  :config (setq company-idle-delay 0.2))
+;; Add custom load path
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
-;;; Startup Screen Settings
-;; Set initial buffer and appearance
-(setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
-(setq inhibit-startup-screen t)
-(setq initial-scratch-message "")
-(setq initial-major-mode 'org-mode)
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-
-;; key Bindings
-(global-set-key (kbd "M-x") 'helm-M-x)
+;; Load custom configuration files
+(load "packages" 'noerror 'nomessage)
+(load "ui" 'noerror 'nomessage)
+(load "keybindings" 'noerror 'nomessage)
+(load "backup" 'noerror 'nomessage)
 
 ;; Custom Settings
 (custom-set-variables

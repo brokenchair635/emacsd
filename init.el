@@ -34,7 +34,6 @@
 
 ;;; Startup Screen Settings
 ;; Set initial buffer and appearance
-(switch-to-buffer "*scratch*")
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message "")

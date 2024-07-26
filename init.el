@@ -14,6 +14,21 @@
 (load "keybindings" 'noerror 'nomessage)
 (load "backup" 'noerror 'nomessage)
 
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+(setq web-mode-enable-auto-closing t)
+(setq web-mode-enable-auto-pairing t)
+
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 0.2)
+
+(require 'flycheck)
+(global-flycheck-mode)
+
 ;; Custom Settings
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

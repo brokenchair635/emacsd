@@ -11,5 +11,9 @@
 (setq kept-new-versions 6)
 (setq kept-old-versions 2)
 (setq version-control t)  ;; Use versioned backups
+(setq auto-save-file-name-transforms
+      `((".*" "~/.emacs.d/auto-save-list/" t)))
+(setq auto-save-timeout 20)
+(setq auto-save-interval 200)
 
 ;;; backup.el ends here

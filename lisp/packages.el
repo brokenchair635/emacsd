@@ -28,5 +28,9 @@
   :ensure t)
 (use-package web-mode
   :ensure t)
+;;;On MacOS
+(use-package exec-path-from-shell
+  :ensure t)
+(exec-path-from-shell-initialize)
 
 ;;; packages.el ends here

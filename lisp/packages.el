@@ -15,7 +15,7 @@
 (eval-when-compile
   (require 'use-package))
 
-;; Configure packages with `use-package`
+;; Install packages with `use-package`
 (use-package flycheck
   :ensure t)
 (use-package company
@@ -26,9 +26,9 @@
   :ensure t)
 (use-package auctex
   :ensure t)
-(use-package web-mode
+(use-package js2-mode
   :ensure t)
-;;;On MacOS
+;;;On MacOS also add the following to fix your $PATH environment variable:
 (use-package exec-path-from-shell
   :ensure t)
 (exec-path-from-shell-initialize)

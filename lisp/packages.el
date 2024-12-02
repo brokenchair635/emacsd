@@ -26,12 +26,18 @@
   :ensure t)
 (use-package auctex
   :ensure t)
+(use-package js2-mode
+  :ensure t)
+(use-package dockerfile-mode
+  :ensure t)
 (use-package lsp-mode
   :ensure t
-  :hook ((c++-mode . lsp)
+  :hook ((c-mode . lsp)
+         (c++-mode . lsp)
          (html-mode . lsp)
          (css-mode . lsp)
          (js2-mode . lsp))
+         (dockerfile-mode . lsp)
   :commands lsp)
 
 ;;; packages.el ends here

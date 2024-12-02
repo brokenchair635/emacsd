@@ -5,6 +5,8 @@
 
 ;;; Code:
 
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (setq company-minimum-prefix-length 1

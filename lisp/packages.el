@@ -26,8 +26,6 @@
   :ensure t)
 (use-package auctex
   :ensure t)
-(use-package js2-mode
-  :ensure t)
 (use-package lsp-mode
   :ensure t
   :hook ((c++-mode . lsp)

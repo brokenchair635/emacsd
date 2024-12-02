@@ -5,4 +5,4 @@ eshell/**
 transient/**
 .DS_Store
 eln-cache/**
-
+.cache/**

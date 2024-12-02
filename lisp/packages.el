@@ -28,9 +28,12 @@
   :ensure t)
 (use-package js2-mode
   :ensure t)
-;;;On MacOS also add the following to fix your $PATH environment variable:
-;;(use-package exec-path-from-shell
-;;  :ensure t)
-;;(exec-path-from-shell-initialize)
+(use-package lsp-mode
+  :ensure t
+  :hook ((c++-mode . lsp)
+         (html-mode . lsp)
+         (css-mode . lsp)
+         (js2-mode . lsp))
+  :commands lsp)
 
 ;;; packages.el ends here

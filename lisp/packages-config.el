@@ -9,20 +9,11 @@
 
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-(setq company-idle-delay 0.2)
-(setq company-minimum-prefix-length 1)
+(setq company-minimum-prefix-length 1
+      company-idle-delay 0.0) ;; default is 0.2
 
 (require 'flycheck)
 (global-flycheck-mode)
-
-(setq-default flycheck-disabled-checkers '(javascript-jshint))
-(add-hook 'js2-mode-hook (lambda () (setq flycheck-checker 'javascript-eslint)))
-(add-hook 'js2-mode-hook #'flycheck-mode)
-
-(add-hook 'c-mode-hook (lambda () (setq flycheck-checker 'c/c++-clang)))
-(add-hook 'c++-mode-hook (lambda () (setq flycheck-checker 'c/c++-clang)))
-(add-hook 'c-mode-hook #'flycheck-mode)
-(add-hook 'c++-mode-hook #'flycheck-mode)
 
 (require 'tex)
 (require 'tex-site)

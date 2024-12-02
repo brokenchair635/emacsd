@@ -6,3 +6,5 @@ transient/**
 .DS_Store
 eln-cache/**
 .cache/**
+.cache/lsp/**
+.lsp-session-v1

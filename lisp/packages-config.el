@@ -21,4 +21,11 @@
 (setq TeX-view-program-selection '((output-pdf "PDF Tools")))
 (add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 
+(require 'lsp-mode)
+(add-hook 'lsp-mode-hook 'company-mode)
+(add-hook 'c++-mode-hook #'lsp)
+(add-hook 'html-mode-hook #'lsp)
+(add-hook 'css-mode-hook #'lsp)
+(add-hook 'js2-mode-hook #'lsp)
+(add-hook 'dockerfile-mode-hook #'lsp)
 ;;; packages-config.el ends here

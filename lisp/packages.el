@@ -32,8 +32,7 @@
   :ensure t)
 (use-package lsp-mode
   :ensure t
-  :hook ((c-mode . lsp)
-         (c++-mode . lsp)
+  :hook ((c++-mode . lsp)
          (html-mode . lsp)
          (css-mode . lsp)
          (js2-mode . lsp))

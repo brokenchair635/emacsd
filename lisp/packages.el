@@ -26,10 +26,6 @@
   :ensure t)
 (use-package auctex
   :ensure t)
-(use-package pdf-tools
-  :ensure t
-  :config
-  (pdf-tools-install))
 (use-package js2-mode
   :ensure t)
 (use-package dockerfile-mode

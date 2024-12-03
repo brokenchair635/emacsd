@@ -27,5 +27,5 @@
 (add-hook 'css-mode-hook #'lsp)
 (add-hook 'js2-mode-hook #'lsp)
 (add-hook 'dockerfile-mode-hook #'lsp)
-(add-hook 'latex-mode-hook #'lsp)
+(add-hook 'LaTeX-mode-hook #'lsp)
 ;;; packages-config.el ends here

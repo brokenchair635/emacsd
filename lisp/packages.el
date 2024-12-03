@@ -26,6 +26,10 @@
   :ensure t)
 (use-package auctex
   :ensure t)
+(use-package pdf-tools
+  :ensure t
+  :config
+  (pdf-tools-install))
 (use-package js2-mode
   :ensure t)
 (use-package dockerfile-mode
@@ -39,6 +43,8 @@
          (css-mode . lsp)
          (js2-mode . lsp))
          (dockerfile-mode . lsp)
+         (LaTeX-mode . lsp)
+  
   :commands lsp)
 
 ;;; packages.el ends here

@@ -10,5 +10,5 @@
 (menu-bar-mode -1)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
-(setq initial-major-mode 'markdown-mode)
+(setq initial-major-mode 'fundamental-mode)
 ;;; ui.el ends here

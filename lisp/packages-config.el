@@ -7,11 +7,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-(setq company-minimum-prefix-length 1
-      company-idle-delay 0.0) ;; default is 0.2
-
 (require 'flycheck)
 (global-flycheck-mode)
 

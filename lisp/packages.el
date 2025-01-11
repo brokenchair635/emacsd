@@ -18,8 +18,6 @@
 ;; Install packages with `use-package`
 (use-package flycheck
   :ensure t)
-(use-package company
-  :ensure t)
 (use-package helm
   :ensure t)
 (use-package magit

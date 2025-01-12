@@ -34,7 +34,6 @@
          (html-mode . lsp)
          (css-mode . lsp)
          (js2-mode . lsp))
-         (dockerfile-mode . lsp)
          (LaTeX-mode . lsp)
   
   :commands lsp)
